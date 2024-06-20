@@ -5,7 +5,7 @@ a{
 }
 
 a:hover{
-    color: #388e3c
+    color: #388e3c;
 }
 
 body{
@@ -127,7 +127,8 @@ nav .links a.active{
     background: #000;
 }
 
-.about .right a.online{
+.about .right a.online,
+footer a.online{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +140,8 @@ nav .links a.active{
     font-size: 14px;
 }
 
-.about .right a.online i{
+.about .right a.online i,
+footer a.online i{
     color: #4caf50;
     font-size: 8px;
 }
@@ -267,3 +269,132 @@ nav .links a.active{
     font-size: 12px;
 }
 
+footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #18181b;
+    border: 1px solid #27272a;
+    padding: 44px;
+    border-radius: 14px;
+}
+
+footer > a{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .socials a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #bdbdbd;
+}
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about{
+        padding: 60px 30px;
+    }
+
+    .works{
+        flex-direction: column;
+    }
+
+    .works .left,
+    .works .right .item,
+    footer{
+        padding: 40px 30px;
+    }
+
+    .works .right {
+        grid-template-rows: auto
+        auto;
+    }
+}
+
+@media  screen and (max-width: 992px) {
+    nav .links{
+        padding: 0 40px
+    }
+
+    footer > a{
+        font-size: 20px;
+    }
+
+    footer .socials a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav .links a{
+        font-size: 16px;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .about .left .info{
+        margin-top: 30px;
+    }
+
+    .about .right img{
+        margin-top: 20px;
+    }
+
+    footer a.online{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about .left .info h2{
+        font-size: 30px;
+    }
+
+    .about .left .info p,
+    .works .left .works-list .item .work-info p,
+    .works .left .works-list .item .work-info > p{
+        font-size: 16px;
+    }
+
+    .about .left .info .buttons button{
+        font-size: 14px;
+    }
+
+    .works .left .work-list{
+        margin-top: 40px;
+    }
+
+    .works .left .works-list .item .work-info h5,
+    .works right .item a{
+        font-size: 20px;
+    }
+
+    .works .right .item > p,
+    .works .rigth .item:not(:first-child) a{
+        font-size: 14px;
+    }
+
+    .works .rigth .item:not(:first-child) p{
+        font-size: 12px;
+    }
+}
