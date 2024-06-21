@@ -1,15 +1,29 @@
+:root{
+    --primary-text-color: #388e3c;
+    --white: #fff;
+    --black: #000;
+    --gray: #bdbdbd;
+    --dark-blue: #18181b;
+    --dark-gray: #2c2c2c;
+    --background: #171717;
+    --border-color: #27272a;
+    --green-lemon: #4caf50;
+
+
+}
+
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease;
 }
 
 a:hover{
-    color: #388e3c;
+    color: var(--primary-text-color);
 }
 
 body{
-    background-color: #171717;
+    background-color: var(--background);
     padding: 20px;
     animation: fadeInAnimation ease 2s;
 }
@@ -22,8 +36,8 @@ nav{
 nav .logo{
     height: 64px;
     width: 64px;
-    background: #18181b;
-    border: 1px solid #27272a;
+    background: var(--dark-blue);
+    border: 1px solid var(--border-color);
     border-radius: 48px;
     display: flex;
     align-items: center;
@@ -32,7 +46,7 @@ nav .logo{
 
 nav .logo i{
     font-size: 26px;
-    color: #388e3c
+    color: var(--primary-text-color);
 }
 
 nav .links{
@@ -42,8 +56,8 @@ nav .links{
     justify-content: space-between;
     width: 100%;
     padding: 0 66px;
-    background: #18181b;
-    border: 1px solid #27272a;
+    background: var(--dark-blue);
+    border: 1px solid var(--border-color);
     border-radius: 48px;
 }
 
@@ -53,7 +67,7 @@ nav .links a{
 
 nav .links a.active{
     font-weight: bold;
-    color: #388e3c;
+    color: var(--primary-text-color);
 }
 
 .about{
@@ -61,14 +75,14 @@ nav .links a.active{
     align-items: center;
     justify-content: space-between;
     padding: 60px 42px;
-    background: #18181b;
-    border: 1px solid #27272a;
+    background: var(--dark-blue);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     margin-top: 20px;
 }
 
 .about .left h3{
-    color: #bdbdbd;
+    color: var(--gray);
     font-size: 24px;
     font-weight: 400;
 }
@@ -82,13 +96,13 @@ nav .links a.active{
 
 .about .left .info h2{
     font-size: 36px;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
 }
 
 .about .left .info p{
     font-size: 20px;
-    color: #bdbdbd;
+    color: var(--gray);
 }
 
 .about .left .info .buttons{
@@ -108,23 +122,23 @@ nav .links a.active{
 }
 
 .about .left .info .buttons button.hire{
-    color: #fff;
-    background: #388e3c;
-    border: 1px solid #171717;
+    color: var(--white);
+    background: var(--primary-text-color);
+    border: 1px solid var(--background);
 }
 
 .about .left .info .buttons button.hire:hover{
-    background: #4caf50;
+    background: var(--green-lemon);
 }
 
 .about .left .info .buttons button.email{
-    color: #bdbdbd;
-    border: 1px solid #27272a;
-    background: #171717;
+    color: var(--gray);
+    border: 1px solid var(--border-color);
+    background: var(--background);
 }
 
 .about .left .info .buttons button.email:hover{
-    background: #000;
+    background: var(--black);
 }
 
 .about .right a.online,
@@ -133,8 +147,8 @@ footer a.online{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: #171717;
-    border: 1px solid #27272a;
+    background: var(--background);
+    border: 1px solid var(--border-color);
     padding: 4px 15px;
     border-radius: 12px;
     font-size: 14px;
@@ -142,7 +156,7 @@ footer a.online{
 
 .about .right a.online i,
 footer a.online i{
-    color: #4caf50;
+    color: var(--green-lemon);
     font-size: 8px;
 }
 
@@ -150,7 +164,7 @@ footer a.online i{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 8px solid #2c2c2c;
+    border: 8px solid var(--dark-gray);
     object-fit: cover;
     margin-top: 70px;
 }
@@ -163,14 +177,14 @@ footer a.online i{
 
 .works .left{
     flex: 1;
-    background: #18181b;
+    background: var(--dark-blue);
     padding: 60px 40px;
-    border: 1px solid #27272a;
+    border: 1px solid var(--border-color);
     border-radius: 14px;
 }
 
 .works .left h3{
-    color: #bdbdbd;
+    color: var(--gray);
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -195,24 +209,24 @@ footer a.online i{
     justify-content: space-between;
 }
 .works .left .works-list .item .work-info h5{
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     font-weight: 500;
 }
 
 .works .left .works-list .item .work-info h5.active{
-    color: #388e3c;
+    color: var(--primary-text-color);
 }
 
 .works .left .works-list .item .work-info p{
     margin-top: 12px;
-    color: #bdbdbd;
+    color: var(--gray);
     font-size: 20px;
 }
 
 .works .left .works-list .item > p{
     font-size: 20px;
-    color: #bdbdbd;
+    color: var(--gray);
 }
 
 
@@ -234,25 +248,25 @@ footer a.online i{
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background: #18181b;
-    border: 1px solid #27272a;
+    background: var(--dark-blue);
+    border: 1px solid var(--border-color);
     border-radius: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .works .right .item:hover a{
-    color: #388e3c;
+    color: var(--primary-text-color);
 }
 
 .works .right .item a{
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+    color: var(--white);
 }
 
 .works .right .item > p{
-    color: #bdbdbd;
+    color: var(--gray);
     font-size: 17px;
     line-height: 26px;
 }
@@ -274,8 +288,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #18181b;
-    border: 1px solid #27272a;
+    background: var(--dark-blue);
+    border: 1px solid var(--border-color);
     padding: 44px;
     border-radius: 14px;
 }
@@ -294,7 +308,7 @@ footer .socials{
 footer .socials a{
     font-size: 20px;
     font-weight: 500;
-    color: #bdbdbd;
+    color: var(--gray);
 }
 
 @keyframes fadeInAnimation {
