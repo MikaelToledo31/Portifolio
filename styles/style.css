@@ -1,5 +1,5 @@
 :root{
-    --primary-text-color: #388e3c;
+    --primary-text-color: #304AF0;
     --white: #fff;
     --black: #000;
     --gray: #bdbdbd;
@@ -7,7 +7,7 @@
     --dark-gray: #2c2c2c;
     --background: #171717;
     --border-color: #27272a;
-    --green-lemon: #4caf50;
+    --green-lemon: #30C3F0;
 
 
 }
@@ -190,6 +190,7 @@ footer a.online i{
     align-items: center;
     gap: 8px;
     font-size: 24px;
+    margin-bottom: 52px;
 }
 
 .works .left h3 i{
@@ -207,6 +208,8 @@ footer a.online i{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 0 30px;
+
 }
 .works .left .works-list .item .work-info h5{
     color: var(--white);
