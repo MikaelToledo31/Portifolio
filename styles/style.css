@@ -8,7 +8,7 @@
     --background: #171717;
     --border-color: #27272a;
     --green-lemon: #30C3F0;
-
+    --green: #42ED5A;;
 
 }
 
@@ -139,6 +139,10 @@ nav .links a.active{
 
 .about .left .info .buttons button.email:hover{
     background: var(--black);
+}
+
+.about .left .info .buttons #copy-email-icon{
+    color: var(--green);
 }
 
 .about .right a.online,

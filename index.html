@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
 
+    <script src="script.js"></script>
+
     <title>Portifolio #4</title>
 </head>
 
@@ -33,9 +35,10 @@
                     <button class="hire">
                         Contrate-me <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="email">
-                        Copiar e-mail <i class="fa-solid fa-copy"></i>
+                    <button onclick="copyEmail()" class="email" id="copy-email-btn"> 
+                        Copiar e-mail <i class="fa-solid fa-copy"></i> <i id="copy-email-icon" class="fa-solid fa-check" style="display: none;"></i>
                     </button>
+                    
                 </div>
             </div>
         </div>
@@ -80,16 +83,16 @@
         </div>
         <div class="right">
             <div class="item">
-                <a href="#">About My Work</a>
-                <p>text falando sobre o trabalho</p>
+                <a href="#">Objetivo</a>
+                <p>Buscando oportunidade de assistente/analista para primeira oportunidade profissional na área.</p>
             </div>
             <div class="item">
-                <a href="#">Design Solutions</a>
-                <p>Ways to solve design challenges with creative approaches</p>
+                <a href="#"> Profigma Web</a>
+                <p>Curso de desenvolvimento web responsivo com o figma.</p>
             </div>
             <div class="item">
-                <a href="#">Responsive Designs</a>
-                <p>Ways to solve design challenges with creative approaches</p>
+                <a href="/assets/pdf/HTML5_CSS3_CSSmoderno.pdf" target="_blank">Responsive Designs</a>
+                <p>Curso de HTML e CSS.</p>
             </div>
             <div class="item">
                 <a href="#">Reserch and Testing</a>
