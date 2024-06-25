@@ -156,6 +156,7 @@ footer a.online{
     padding: 4px 15px;
     border-radius: 12px;
     font-size: 14px;
+    cursor: default;
 }
 
 .about .right a.online i,
@@ -264,6 +265,7 @@ footer a.online i{
 
 .works .right .item:hover a{
     color: var(--primary-text-color);
+    
 }
 
 .works .right .item a{
