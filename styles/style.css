@@ -1,13 +1,13 @@
 :root{
-    --primary-text-color: #304AF0;
-    --white: #fff;
-    --black: #000;
-    --gray: #bdbdbd;
+    --primary-text-color: #628ecb;
+    --white: #f0f3fa;
+    --black: #190019;
+    --gray: #d5deef;
     --dark-blue: #18181b;
     --dark-gray: #2c2c2c;
-    --background: #171717;
+    --background: #190019;
     --border-color: #27272a;
-    --green-lemon: #30C3F0;
+    --green-lemon: #b1c9ef;
     --green: #42ED5A;;
 
 }
@@ -42,6 +42,37 @@ nav .logo{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+nav .logo .loader {
+  width: 40px;
+  height: 26px;
+  --c:no-repeat linear-gradient(#628ecb 0 0);
+  background:
+    var(--c) 0    100%,
+    var(--c) 50%  100%,
+    var(--c) 100% 100%;
+  background-size:8px calc(100% - 4px);
+  position: relative;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eecc8c;
+  left: 0;
+  top: 0;
+  animation: 
+    l3-1 1.5s  linear infinite alternate,
+    l3-2 0.75s cubic-bezier(0,200,.8,200) infinite;
+}
+@keyframes l3-1 {
+  100% {left:calc(100% - 8px)}
+}
+@keyframes l3-2 {
+  100% {top:-0.1px}
 }
 
 nav .logo i{
